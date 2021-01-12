@@ -1,0 +1,41 @@
+@font-face {
+  font-display: swap;
+  font-family: Poppins;
+  src: 
+    url('./fonts/poppins-regular.woff2'),
+    url('./fonts/poppins-regular.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Poppins;
+  src: 
+    url('./fonts/poppins-semibold.woff2'),
+    url('./fonts/poppins-semibold.woff');
+  font-weight: 600;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
+}
+
+h3 {
+  font-size: 3rem;
+}
