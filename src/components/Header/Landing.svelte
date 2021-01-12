@@ -14,8 +14,8 @@
 
 	.container {
     display: flex;
-    height: calc(100vh - 67px);
-    margin-top: 67px;
+    height: 100vh;
+    padding-top: 67px;
   }
 
   .title {
