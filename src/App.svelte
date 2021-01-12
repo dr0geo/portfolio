@@ -7,7 +7,3 @@
 <main>
 	<Introduction />
 </main>
-
-<style>
-	
-</style>
