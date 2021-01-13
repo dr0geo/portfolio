@@ -2,8 +2,6 @@
 
   import Inview from 'svelte-inview';
   let ref;
-
-  export let selected;
   
 </script>
 

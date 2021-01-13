@@ -20,7 +20,7 @@
 </header>
 <main>
 	<Introduction bind:selected />
-	<Details bind:selected />
+	<Details />
 	<Skills bind:selected />
 	<Projects bind:selected />
 </main>
