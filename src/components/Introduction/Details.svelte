@@ -1,26 +1,36 @@
 <script>
-  let visible = false;
+
+  import Inview from 'svelte-inview';
+  let ref;
+  
 </script>
+
+<Inview
+  let:inView
+  wrapper={ref}
+  rootMargin="-200px"
+  unobserveOnEnter={true}>
 
 <section>
   <h3>come<br /><em>CLOSER</em></h3>
   <div id="container" class="container">
-    <div class="card">
-      <img src="/images/logo/hercules.png" alt="Military pilot" loading="lazy" />
-      <div class="circle">
-        <div class={visible ? 'line animate' : 'line'}></div>
+    <div class="card"bind:this={ref}>
+      <img src="/images/logo/hercules.png" alt="Military pilot" loading="lazy" class:fadeIn={inView} />
+      <div class="circle" >
+        <div class="line" class:animate={inView}></div>
       </div>
       <h4>2012 - 2020</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="card">
-      <img src="/images/logo/training.png" alt="Military pilot" loading="lazy" />
+      <img src="/images/logo/training.png" alt="Military pilot" loading="lazy" class:secondFadeIn={inView} />
       <div class="circle"></div>
       <h4>2020</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="card">
-      <img src="/images/logo/dev.png" alt="Military pilot" loading="lazy" />
+      <img src="/images/logo/dev.png" alt="Military pilot" loading="lazy" 
+      class:thirdFadeIn={inView} />
       <div class="circle">
         <div class="line-hide"></div>
       </div>
@@ -29,6 +39,7 @@
     </div>
   </div>
 </section>
+</Inview>
 
 <style>
 
@@ -73,6 +84,15 @@
       }
     }
 
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     .container {
       flex-direction: row;
     }
@@ -83,6 +103,7 @@
 
     img {
       height: 11vw;
+      opacity: 0;
     }
 
     .circle {
@@ -106,11 +127,24 @@
 
     .line {
       background-color: #bbbbbb;
+      transform: scaleX(0);
       transform-origin: left center;
     }
 
     .animate {
-      animation: translateLine 5s ease-in-out both;
+      animation: translateLine 3s ease-in-out both;
+    }
+
+    .fadeIn {
+      animation: fadeIn 0.7s ease-in-out both;
+    }
+
+    .secondFadeIn {
+      animation: fadeIn 0.7s 1.3s ease-in-out both;
+    }
+
+    .thirdFadeIn {
+      animation: fadeIn 0.7s 2.5s ease-in-out both;
     }
 
     .line-hide {
