@@ -17,6 +17,7 @@
 <style>
 
   section {
+    background-color: #f2f2f2;
     display: grid;
     gap: 3vw 7vw;
     grid-template-columns: 25vw 1fr;
@@ -51,6 +52,10 @@
     grid-row: 1 / 2;
   }
 
+  h3 > em {
+    background: linear-gradient(transparent 46%, #0093d9 46%, #0093d9 75%, transparent 75%);
+  }
+  
   .text {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -70,7 +75,7 @@
     section {
       gap: 0 50px;
       grid-template-columns: 490px 1fr;
-      grid-template-rows: auto 1fr;
+      grid-template-rows: 145px 345px;
     }
 
     .picture {
@@ -94,6 +99,10 @@
     .grey {
       left: 40px;
       top: -410px;
+    }
+
+    p{
+      text-align: left;
     }
   }
 

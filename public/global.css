@@ -30,6 +30,7 @@ section {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -42,20 +43,37 @@ h3 {
 }
 
 h3 > em {
-  background: linear-gradient(transparent 46%, #0093d9 46%, #0093d9 75%, transparent 75%);
   display: inline-block;
   font-weight: 600;
   width: 40vw;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 30px auto;
+}
+
+p {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   section {
     padding: 40px 5%;
   }
+
+  h3 > em {
+    width: 24vw;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
   section {
     scroll-margin-top: 67px;
+  }
+
+  h3 > em {
+    width: 180px;
   }
 }
