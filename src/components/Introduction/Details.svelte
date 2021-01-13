@@ -56,7 +56,7 @@
   img {
     display: block;
     height: 30vw;
-    max-height: 180px;
+    max-height: 150px;
   }
 
   .circle, .line {

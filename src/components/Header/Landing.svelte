@@ -1,11 +1,11 @@
 <script>
-
+  import { fly } from 'svelte/transition';
 </script>
 
 <div id="home" class="container">
   <div class="title">
-    <h1>Geoffroy<br /><strong>VIE</strong></h1>
-    <h2>front-end developer</h2>
+    <h1 in:fly={{ delay: 400, duration: 700, y: -300 }}>Geoffroy<br /><strong>VIE</strong></h1>
+    <h2 in:fly={{ delay: 800, duration: 700, y: 300 }}>front-end developer</h2>
   </div>
   <div class="image"></div>
 </div>
@@ -47,7 +47,6 @@
     width: 140%;
     z-index: 1;
   }
-  
 
   @media only screen and (min-width: 768px) {
     .title {
@@ -81,10 +80,12 @@
 
     h1 {
       font-size: 4rem;
+      padding-left: 50px;
     }
 
     h2 {
       font-size: 2rem;
+      padding-left: 50px;
     }
   }
 	

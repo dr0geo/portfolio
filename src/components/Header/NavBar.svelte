@@ -1,5 +1,7 @@
 <script>
-  let selected = 1;
+
+  export let selected;
+
 </script>
 
 <style>
@@ -42,7 +44,7 @@
 </style>
 
 <nav>
-  <ul>
+  <ul on:scroll={() => selected += 1}>
     <li>
       <a
         href="#home"
@@ -52,7 +54,7 @@
     </li>
     <li>
       <a
-        href="#about-me"
+        href="#about"
         class={selected === 2 ? 'selected' : ''}
         on:click={() => (selected = 2)}>About me</a>
     </li>

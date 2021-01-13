@@ -2,7 +2,7 @@
 
 </script>
 
-<section id="about-me">
+<section id="about">
   <div class="picture">
     <div class="black"></div>
     <div class="grey"></div>
