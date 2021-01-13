@@ -1,8 +1,18 @@
 <script>
+  import Inview from 'svelte-inview';
+  let ref;
+
+  export let selected;
 
 </script>
 
-<section id="about">
+<Inview
+  wrapper={ref}
+  rootMargin="0px"
+  threshold=1
+  on:enter={() => selected = 2}>
+
+<section id="about" bind:this={ref}>
   <div class="picture">
     <div class="black"></div>
     <div class="grey"></div>
@@ -13,6 +23,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
   </div>
 </section>
+</Inview>
 
 <style>
 

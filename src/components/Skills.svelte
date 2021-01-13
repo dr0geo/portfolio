@@ -1,8 +1,19 @@
 <script>
 
+  import Inview from 'svelte-inview';
+  let ref;
+
+  export let selected;
+
 </script>
 
-<section id="skills">
+<Inview
+  wrapper={ref}
+  rootMargin="0px"
+  threshold=1
+  on:enter={() => selected = 3}>
+
+<section id="skills" bind:this={ref}>
   <h3>my<br /><em>SKILLS</em></h3>
   <div class="icons">
     <figure>
@@ -39,6 +50,7 @@
     </figure>
   </div>
 </section>
+</Inview>
 
 <style>
 

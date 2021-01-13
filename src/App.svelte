@@ -10,16 +10,17 @@
 	import Projects from './components/Projects.svelte';
 
 	let selected = 1;
+	$: console.log(selected);
 	
 </script>
 
 <header in:fade={{ duration: 600 }}>
 	<NavBar {selected} />
-	<Landing />
+	<Landing bind:selected />
 </header>
 <main>
-	<Introduction />
-	<Details />
-	<Skills />
-	<Projects />
+	<Introduction bind:selected />
+	<Details bind:selected />
+	<Skills bind:selected />
+	<Projects bind:selected />
 </main>

@@ -2,6 +2,8 @@
 
   import Inview from 'svelte-inview';
   let ref;
+
+  export let selected;
   
 </script>
 
@@ -14,7 +16,7 @@
 <section>
   <h3>come<br /><em>CLOSER</em></h3>
   <div id="container" class="container">
-    <div class="card"bind:this={ref}>
+    <div class="card" bind:this={ref}>
       <img src="/images/logo/hercules.png" alt="Military pilot" loading="lazy" class:fadeIn={inView} />
       <div class="circle" >
         <div class="line" class:animate={inView}></div>
