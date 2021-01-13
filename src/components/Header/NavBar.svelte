@@ -6,15 +6,8 @@
   <ul>
     <li
       class={selected === 1 ? 'selected' : ''}
-      on:click={() => {
-        selected = 1;
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: 'smooth'})
-      }}
-    >
-        Home
+      on:click={() => (selected = 1)}>
+      <a href="#home">Home</a>
     </li>
     <li
       class={selected === 2 ? 'selected' : ''}
@@ -67,16 +60,21 @@
     }
 
     li {
-      border-bottom: 3px solid transparent;
       list-style-type: none;
+    }
+
+    a {
+      border-bottom: 3px solid transparent;
+      display: block;
       padding: 10px 0;
+      transition: border-bottom 0.2s ease-in-out;
     }
 
     .selected {
       border-bottom: 3px solid #0093d9;
     }
       @media (any-hover: hover) {
-        li {
+        a {
           cursor: pointer;
         }
       }
