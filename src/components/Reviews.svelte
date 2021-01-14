@@ -1,5 +1,6 @@
 <script>
   import Inview from 'svelte-inview';
+  import { fade, scale } from 'svelte/transition';
   import { selected } from '../stores';
   import { reviews } from '../data';
 
@@ -24,7 +25,9 @@
     <h3><em>REVIEWS</em></h3>
     <div class="card">
       <img src="/images/logo/quote.png" alt="" loading="lazy" />
-      <figure class="customer">
+
+      {#key chosenReview}
+      <figure class="customer" in:fade={{ delay: 300 }}>
         <img
           src={reviewToDisplay.image}
           alt="{reviewToDisplay.company} logo"
@@ -35,7 +38,9 @@
           <p>{reviewToDisplay.company}</p>
         </figcaption>
       </figure>
-      <p class="description">{reviewToDisplay.description}</p>
+      <p class="description" in:fade={{ delay: 300 }}>{reviewToDisplay.description}</p>
+      {/key}
+
     </div>
     <div class="circles">
       {#each reviews as review (review.id)}
@@ -117,6 +122,7 @@
     border-radius: 100%;
     height: 30px;
     margin: 10px 20px;
+    transition: background-color 0.6s ease-in-out 0.1s;
     width: 30px;
   }
 
