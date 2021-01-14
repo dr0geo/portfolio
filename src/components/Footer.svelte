@@ -53,6 +53,7 @@
 
   h3 {
     color: white;
+    text-align: center;
   }
 
   h3 > em {

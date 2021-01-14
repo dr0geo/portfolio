@@ -63,13 +63,13 @@
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 10vw;
   }
 
   h2 {
     background-color: #0093d9;
     color: white;
-    font-size: 1.7rem;
+    font-size: 6vw;
     padding: 10px;
     position: relative;
     width: 140%;
@@ -85,7 +85,12 @@
       width: 60%;
     }
 
+    h1 {
+      font-size: 3rem;
+    }
+
     h2 {
+      font-size: 1.7rem;
       width: 120%;
     }
   }
