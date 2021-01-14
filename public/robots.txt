@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://geoffroy-vie.dev/sitemap.xml
