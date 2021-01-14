@@ -47,7 +47,7 @@
   }
 
   h2 {
-    background-color: #0093d9;
+    background: linear-gradient(45deg, hsl(199deg, 100%, 43%), hsl(199deg, 100%, 20%));
     color: white;
     font-size: 6vw;
     padding: 10px;
