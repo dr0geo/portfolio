@@ -10,7 +10,7 @@
 <Inview
   wrapper={ref}
   rootMargin="0px"
-  threshold=0.7
+  threshold=0.4
   on:enter={() => $selected = 4}>
 
 <section id="projects" bind:this={ref}>

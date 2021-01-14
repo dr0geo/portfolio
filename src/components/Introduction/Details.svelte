@@ -45,6 +45,7 @@
 
   section {
     background-color: #f2f2f2;
+    overflow-x: hidden;
     padding-top: 0;
   }
 
@@ -122,13 +123,13 @@
       max-width: 1120px;
       position: relative;
       top: 9px;
-      width: calc(2 *  90vw / 3);
     }
 
     .line {
       background-color: #bbbbbb;
       transform: scaleX(0);
       transform-origin: left center;
+      width: calc(2 *  90vw / 3);
     }
 
     .animate {
@@ -149,6 +150,7 @@
 
     .line-hide {
       background-color: #f2f2f2;
+      width: calc(100vh / 3);
     }
   }
 
