@@ -7,39 +7,33 @@
     <li>
       <a
         href="#home"
-        class={$selected === 1 ? 'selected' : ''}
-        on:click={() => $selected = 1}>Home
+        class={$selected === 1 ? 'selected' : ''}>Home
       </a>
     </li>
     <li>
       <a
         href="#about"
-        class={$selected === 2 ? 'selected' : ''}
-        on:click={() => $selected = 2}>About me</a>
+        class={$selected === 2 ? 'selected' : ''}>About me</a>
     </li>
     <li>
       <a
         href="#skills"
-        class={$selected === 3 ? 'selected' : ''}
-        on:click={() => $selected = 3}>Skills</a>
+        class={$selected === 3 ? 'selected' : ''}>Skills</a>
     </li>
     <li>
       <a
         href="#projects"
-        class={$selected === 4 ? 'selected' : ''}
-        on:click={() => $selected = 4}>Projects</a>
+        class={$selected === 4 ? 'selected' : ''}>Projects</a>
     </li>
     <li>
       <a
         href="#reviews"
-        class={$selected === 5 ? 'selected' : ''}
-        on:click={() => $selected = 5}>Reviews</a>
+        class={$selected === 5 ? 'selected' : ''}>Reviews</a>
     </li>
     <li>
       <a
         href="#Contact"
-        class={$selected === 6 ? 'selected' : ''}
-        on:click={() => $selected = 6}>Contact</a>
+        class={$selected === 6 ? 'selected' : ''}>Contact</a>
     </li>
   </ul>
 </nav>
