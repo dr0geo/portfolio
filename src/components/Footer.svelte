@@ -29,7 +29,7 @@
   <div class="container">
     <div class="item">
       <img src="/images/logo/email.png" alt="" loading="lazy" />
-      <p><a href="mailto:geoffroy.vie@domain.dev">geoffroy.vie@domain.dev</a></p>
+      <p><a href="mailto:contact@geoffroy-vie.dev">contact@geoffroy-vie.dev</a></p>
     </div>
     <div class="item">
       <img src="/images/logo/phone.png" alt="" loading="lazy" title="Signal / WhatsApp" />
