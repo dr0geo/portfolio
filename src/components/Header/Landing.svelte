@@ -1,54 +1,104 @@
 <script>
-
+  import { fly } from 'svelte/transition';
 </script>
 
 <div id="home" class="container">
   <div class="title">
-    <h1>Geoffroy<br /><strong>VIE</strong></h1>
-    <h2>front-end developer</h2>
+    <h1 in:fly={{ delay: 400, duration: 700, y: -300 }}>
+      Geoffroy<br /><strong>VIE</strong>
+    </h1>
+    <h2 in:fly={{ delay: 800, duration: 700, y: 300 }}>
+      front-end developer
+    </h2>
   </div>
-  <div class="image"></div>
+  <div class="image" />
 </div>
 
 <style>
-
-	.container {
+  .container {
     display: flex;
-    height: calc(100vh - 67px);
-    margin-top: 67px;
+    height: 100vh;
   }
 
   .title {
-    background-color: black;
+    background-color: #1d1d1d;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 5%;
-    width: 35%;
+    width: 60%;
   }
-
-  h1 {
-    font-size: 4rem;
-    padding-left: 10px;
-  }
-
-  h2 {
-    background-color: #0093d9;
-    color: white;
-    font-size: 2rem;
-    padding: 10px;
-    position: relative;
-    width: 120%;
-    z-index: 1;
-  }
-
   .image {
-    background-image: url('/images/background/title.jpg');
+    background: linear-gradient(
+        hsla(0deg, 0%, 0%, 0.6),
+        hsla(0deg, 0%, 0%, 0.6)
+      ),
+      url('/images/background/title.webp');
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    width: 65%;
+    width: 40%;
   }
 
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    background: linear-gradient(45deg, hsl(199deg, 100%, 43%), hsl(199deg, 100%, 23%));
+    color: white;
+    font-size: 6vw;
+    padding: 10px;
+    position: relative;
+    width: 140%;
+    z-index: 1;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .title {
+      width: 40%;
+    }
+
+    .image {
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      width: 120%;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .container {
+      padding-top: 67px;
+    }
+
+    .title {
+      width: 35%;
+    }
+
+    .image {
+      background: url('/images/background/title.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 65%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      padding-left: 50px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      padding-left: 50px;
+    }
+  }
 </style>

@@ -1,34 +1,33 @@
 @font-face {
-  font-display: swap;
+  font-display: optional;
   font-family: Poppins;
-  src: 
-    url('./fonts/poppins-regular.woff2'),
-    url('./fonts/poppins-regular.woff');
   font-weight: 400;
+  src: url('./fonts/poppins-regular.woff2');
 }
 
 @font-face {
-  font-display: swap;
+  font-display: optional;
   font-family: Poppins;
-  src: 
-    url('./fonts/poppins-semibold.woff2'),
-    url('./fonts/poppins-semibold.woff');
   font-weight: 600;
+  src: url('./fonts/poppins-semibold.woff2');
 }
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  color: #1d1d1d;
+  font-family: 'Poppins', 'Tahoma', sans-serif;
 }
 
-section {
-  padding: 40px;
+section, footer {
+  padding: 40px 20px;
 }
 
 a {
+  color: #1d1d1d;
   text-decoration: none;
 }
 
@@ -37,5 +36,41 @@ a:visited {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+h3 > em {
+  display: inline-block;
+  font-weight: 600;
+  width: 40vw;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 30px auto;
+}
+
+p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  section, footer {
+    padding: 40px 5%;
+  }
+
+  h3 > em {
+    width: 24vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  section, footer {
+    scroll-margin-top: 67px;
+  }
+
+  h3 > em {
+    width: 180px;
+  }
 }

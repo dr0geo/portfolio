@@ -1,42 +1,65 @@
 <script>
-
+  import { selected } from '../../stores';
 </script>
 
 <nav>
   <ul>
-    <li class="selected"><a href="#home">Home</a></li>
-    <li><a href="#about-me">About me</a></li>
-    <li><a href="/">Skills</a></li>
-    <li><a href="/">Works</a></li>
-    <li><a href="/">Reviews</a></li>
-    <li><a href="/">Contact</a></li>
+    <li>
+      <a href="#home" class:selected={$selected === 1}>Home </a>
+    </li>
+    <li>
+      <a href="#about" class:selected={$selected === 2}>About me</a>
+    </li>
+    <li>
+      <a href="#skills" class:selected={$selected === 3}>Skills</a>
+    </li>
+    <li>
+      <a href="#projects" class:selected={$selected === 4}>Projects</a>
+    </li>
+    <li>
+      <a href="#reviews" class:selected={$selected === 5}>Reviews</a>
+    </li>
+    <li>
+      <a href="#contact" class:selected={$selected === 6}>Contact</a>
+    </li>
   </ul>
 </nav>
 
 <style>
-
   nav {
-    background-color: white;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 10;
+    display: none;
   }
 
-  ul {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-  }
+  @media only screen and (min-width: 1280px) {
+    nav {
+      background-color: white;
+      display: block;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      z-index: 10;
+    }
 
-  li {
-    list-style-type: none;
-    padding: 10px 0;
-  }
+    ul {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+    }
 
-  .selected {
-    border-bottom: 3px solid #0093d9;
-  }
+    li {
+      list-style-type: none;
+    }
 
+    a {
+      border-bottom: 3px solid transparent;
+      display: block;
+      padding: 10px 0;
+      transition: border-bottom 0.2s ease-in-out 0.3s;
+    }
+
+    .selected {
+      border-bottom: 3px solid #0093d9;
+    }
+  }
 </style>
