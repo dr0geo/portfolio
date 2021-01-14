@@ -167,6 +167,7 @@
    
     .card > img {
       height: 120px;
+      left: 120px;
       top: -60px;
     }
 
