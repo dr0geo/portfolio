@@ -1,38 +1,18 @@
 <script>
   import { fly } from 'svelte/transition';
-  import Inview from 'svelte-inview';
-  import { selected } from '../../stores';
-
-  let ref;
 </script>
 
-<Inview
-  wrapper={ref}
-  threshold={0.5}
-  on:leave={({ detail }) => {
-    if (detail.scrollDirection.vertical === 'up') {
-      $selected = 2;
-    } else {
-      return;
-    }
-  }}
-  on:enter={({ detail }) => {
-    if (detail.scrollDirection.vertical === 'down') {
-      $selected = 1;
-    }
-  }}>
-  <div id="home" class="container" bind:this={ref}>
-    <div class="title">
-      <h1 in:fly={{ delay: 400, duration: 700, y: -300 }}>
-        Geoffroy<br /><strong>VIE</strong>
-      </h1>
-      <h2 in:fly={{ delay: 800, duration: 700, y: 300 }}>
-        front-end developer
-      </h2>
-    </div>
-    <div class="image" />
+<div id="home" class="container">
+  <div class="title">
+    <h1 in:fly={{ delay: 400, duration: 700, y: -300 }}>
+      Geoffroy<br /><strong>VIE</strong>
+    </h1>
+    <h2 in:fly={{ delay: 800, duration: 700, y: 300 }}>
+      front-end developer
+    </h2>
   </div>
-</Inview>
+  <div class="image" />
+</div>
 
 <style>
   .container {

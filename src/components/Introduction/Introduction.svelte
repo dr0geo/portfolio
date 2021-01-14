@@ -1,4 +1,29 @@
-<section id="about">
+<script>
+  import Inview from 'svelte-inview';
+  import { selected } from '../../stores';
+
+  let ref;
+</script>
+
+<Inview
+  wrapper={ref}
+  threshold={0.5}
+  on:enter={({ detail }) => {
+    if (detail.scrollDirection.vertical === 'up') {
+      $selected = 2;
+    } else {
+      return;
+    }
+  }}
+  on:leave={({ detail }) => {
+    if (detail.scrollDirection.vertical === 'down') {
+      $selected = 1
+    } else {
+      return;
+    }
+  }}
+>
+<section id="about" bind:this={ref}>
   <div class="picture">
     <div class="black" />
     <div class="grey" />
@@ -23,6 +48,7 @@
     </p>
   </div>
 </section>
+</Inview>
 
 <style>
   section {

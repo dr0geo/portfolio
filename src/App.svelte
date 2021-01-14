@@ -1,6 +1,7 @@
 <script>
   import { fade } from 'svelte/transition';
 
+  import { selected } from './stores';
   import NavBar from './components/Header/NavBar.svelte';
   import Landing from './components/Header/Landing.svelte';
   import Introduction from './components/Introduction/Introduction.svelte';
@@ -10,6 +11,8 @@
   import Reviews from './components/Reviews.svelte';
   import Footer from './components/Footer.svelte';
 </script>
+
+<svelte:window on:load={() => $selected = 1} />
 
 <header in:fade={{ duration: 600 }}>
   <NavBar />

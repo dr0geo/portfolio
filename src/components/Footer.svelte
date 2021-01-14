@@ -7,7 +7,8 @@
 
 <Inview
   wrapper={ref}
-  threshold={0.5}
+  rootMargin="67px"
+  threshold={1}
   on:enter={({ detail }) => {
     if (detail.scrollDirection.vertical === 'up') {
       $selected = 6;

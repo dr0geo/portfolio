@@ -55,7 +55,7 @@
       border-bottom: 3px solid transparent;
       display: block;
       padding: 10px 0;
-      transition: border-bottom 0.2s ease-in-out 0.2s;
+      transition: border-bottom 0.2s ease-in-out 0.3s;
     }
 
     .selected {
