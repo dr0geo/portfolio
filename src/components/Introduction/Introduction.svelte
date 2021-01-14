@@ -3,30 +3,42 @@
   import { selected } from '../../stores';
 
   let ref;
-
 </script>
 
 <Inview
   wrapper={ref}
   rootMargin="0px"
-  threshold=0.8
-  on:enter={() => $selected = 2}>
-
-<section id="about" bind:this={ref}>
-  <div class="picture">
-    <div class="black"></div>
-    <div class="grey"></div>
-  </div>
-  <h3>who i am<br /><em>HELLO</em></h3>
-  <div class="text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-</section>
+  threshold="0.8"
+  on:enter={() => ($selected = 2)}
+>
+  <section id="about" bind:this={ref}>
+    <div class="picture">
+      <div class="black" />
+      <div class="grey" />
+    </div>
+    <h3>who i am<br /><em>HELLO</em></h3>
+    <div class="text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+  </section>
 </Inview>
 
 <style>
-
   section {
     background-color: #f2f2f2;
     display: grid;
@@ -34,7 +46,7 @@
     grid-template-columns: 25vw 1fr;
     grid-template-rows: 25vw auto;
   }
-  
+
   .picture {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -64,9 +76,14 @@
   }
 
   h3 > em {
-    background: linear-gradient(transparent 46%, #0093d9 46%, #0093d9 75%, transparent 75%);
+    background: linear-gradient(
+      transparent 46%,
+      #0093d9 46%,
+      #0093d9 75%,
+      transparent 75%
+    );
   }
-  
+
   .text {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -93,7 +110,7 @@
       grid-column: 1 / 2;
       grid-row: 1 / 3;
     }
-    
+
     h3 {
       font-size: 3rem;
     }
@@ -102,7 +119,8 @@
       grid-column: 2 / 3;
     }
 
-    .black, .grey {
+    .black,
+    .grey {
       height: 450px;
       width: 450px;
     }
@@ -112,9 +130,8 @@
       top: -410px;
     }
 
-    p{
+    p {
       text-align: left;
     }
   }
-
 </style>

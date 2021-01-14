@@ -4,51 +4,62 @@
   import { projects } from '../data.js';
 
   let ref;
-
 </script>
 
 <Inview
   wrapper={ref}
   rootMargin="0px"
-  threshold=0.4
-  on:enter={() => $selected = 4}>
-
-<section id="projects" bind:this={ref}>
-  <h3>my<br /><em>PROJECTS</em></h3>
-  <div class="container">
-
-    {#each projects as project (project.id)}
-
-      <div class="card">
-        <a href={project.url} target="_blank" rel="noreferrer">
-          <img src='/images/projects/{project.name.toLowerCase()}.png' alt={project.title} loading="lazy" />
-        </a>
-        <h4>{project.title}</h4>
-        <div class="stack">
-
-          {#each project.stack as tech}
-            <img src='images/logo/{tech.toLowerCase()}.png' alt={tech} loading="lazy" title={tech} />
-          {/each}
-
+  threshold="0.4"
+  on:enter={() => ($selected = 4)}
+>
+  <section id="projects" bind:this={ref}>
+    <h3>my<br /><em>PROJECTS</em></h3>
+    <div class="container">
+      {#each projects as project (project.id)}
+        <div class="card">
+          <a href={project.url} target="_blank" rel="noreferrer">
+            <img
+              src="/images/projects/{project.name.toLowerCase()}.png"
+              alt={project.title}
+              loading="lazy"
+            />
+          </a>
+          <h4>{project.title}</h4>
+          <div class="stack">
+            {#each project.stack as tech}
+              <img
+                src="images/logo/{tech.toLowerCase()}.png"
+                alt={tech}
+                loading="lazy"
+                title={tech}
+              />
+            {/each}
+          </div>
+          <p>{project.description}</p>
         </div>
-        <p>{project.description}</p>
-      </div>
-
-    {/each}
-
-</section>
+      {/each}
+    </div>
+  </section>
 </Inview>
 
 <style>
-
   section {
-    background: linear-gradient(hsla(0deg, 0%, 100%, 0.7), hsla(0deg, 0%, 100%, 0.7)), url('/images/background/projects.webp');
+    background: linear-gradient(
+        hsla(0deg, 0%, 100%, 0.7),
+        hsla(0deg, 0%, 100%, 0.7)
+      ),
+      url('/images/background/projects.webp');
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   h3 > em {
-    background: linear-gradient(transparent 46%, #0093d9 46%, #0093d9 75%, transparent 75%);
+    background: linear-gradient(
+      transparent 46%,
+      #0093d9 46%,
+      #0093d9 75%,
+      transparent 75%
+    );
   }
 
   .container {
@@ -104,5 +115,4 @@
       }
     }
   }
-
 </style>

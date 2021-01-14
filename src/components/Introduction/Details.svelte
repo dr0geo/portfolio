@@ -1,48 +1,78 @@
 <script>
-
   import Inview from 'svelte-inview';
   let ref;
-  
 </script>
 
-<Inview
-  let:inView
-  wrapper={ref}
-  rootMargin="-200px"
-  unobserveOnEnter={true}>
-
-<section>
-  <h3>come<br /><em>CLOSER</em></h3>
-  <div id="container" class="container">
-    <div class="card" bind:this={ref}>
-      <img src="/images/logo/hercules.png" alt="Military pilot" loading="lazy" class:fadeIn={inView} />
-      <div class="circle" >
-        <div class="line" class:animate={inView}></div>
+<Inview let:inView wrapper={ref} rootMargin="-200px" unobserveOnEnter={true}>
+  <section>
+    <h3>come<br /><em>CLOSER</em></h3>
+    <div id="container" class="container">
+      <div class="card" bind:this={ref}>
+        <img
+          src="/images/logo/hercules.png"
+          alt="Military pilot"
+          loading="lazy"
+          class:fadeIn={inView}
+        />
+        <div class="circle">
+          <div class="line" class:animate={inView} />
+        </div>
+        <h4>2012 - 2020</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
-      <h4>2012 - 2020</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="card">
-      <img src="/images/logo/training.png" alt="Military pilot" loading="lazy" class:secondFadeIn={inView} />
-      <div class="circle"></div>
-      <h4>2020</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="card">
-      <img src="/images/logo/dev.png" alt="Military pilot" loading="lazy" 
-      class:thirdFadeIn={inView} />
-      <div class="circle">
-        <div class="line-hide"></div>
+      <div class="card">
+        <img
+          src="/images/logo/training.png"
+          alt="Military pilot"
+          loading="lazy"
+          class:secondFadeIn={inView}
+        />
+        <div class="circle" />
+        <h4>2020</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
-      <h4>2021 - Ready to move!</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="card">
+        <img
+          src="/images/logo/dev.png"
+          alt="Military pilot"
+          loading="lazy"
+          class:thirdFadeIn={inView}
+        />
+        <div class="circle">
+          <div class="line-hide" />
+        </div>
+        <h4>2021 - Ready to move!</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </Inview>
 
 <style>
-
   section {
     background-color: #f2f2f2;
     overflow-x: hidden;
@@ -50,7 +80,12 @@
   }
 
   h3 > em {
-    background: linear-gradient(transparent 46%, #ffcd3e 46%, #ffcd3e 75%, transparent 75%);
+    background: linear-gradient(
+      transparent 46%,
+      #ffcd3e 46%,
+      #ffcd3e 75%,
+      transparent 75%
+    );
   }
 
   .container {
@@ -71,7 +106,8 @@
     max-height: 150px;
   }
 
-  .circle, .line {
+  .circle,
+  .line {
     display: none;
   }
 
@@ -116,7 +152,8 @@
       width: 20px;
     }
 
-    .line, .line-hide {
+    .line,
+    .line-hide {
       display: block;
       height: 2px;
       left: 20px;
@@ -129,7 +166,7 @@
       background-color: #bbbbbb;
       transform: scaleX(0);
       transform-origin: left center;
-      width: calc(2 *  90vw / 3);
+      width: calc(2 * 90vw / 3);
     }
 
     .animate {
@@ -153,5 +190,4 @@
       width: calc(100vh / 3);
     }
   }
-
 </style>
