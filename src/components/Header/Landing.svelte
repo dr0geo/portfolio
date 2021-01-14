@@ -21,7 +21,7 @@
   }
 
   .title {
-    background-color: black;
+    background-color: #1d1d1d;
     color: white;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
   }
 
   h2 {
-    background: linear-gradient(45deg, hsl(199deg, 100%, 43%), hsl(199deg, 100%, 20%));
+    background: linear-gradient(45deg, hsl(199deg, 100%, 43%), hsl(199deg, 100%, 23%));
     color: white;
     font-size: 6vw;
     padding: 10px;

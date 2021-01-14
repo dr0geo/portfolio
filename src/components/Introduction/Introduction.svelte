@@ -66,7 +66,7 @@
   }
 
   .black {
-    background-color: black;
+    background-color: #1d1d1d;
     height: 25vw;
     width: 25vw;
   }

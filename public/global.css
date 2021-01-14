@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  color: #1d1d1d;
   font-family: 'Poppins', 'Tahoma', sans-serif;
 }
 
@@ -26,7 +27,7 @@ section, footer {
 }
 
 a {
-  color: black;
+  color: #1d1d1d;
   text-decoration: none;
 }
 

@@ -113,7 +113,7 @@
   }
 
   .selector {
-    border: 2px solid black;
+    border: 2px solid #1d1d1d;
     border-radius: 100%;
     height: 30px;
     margin: 10px 20px;
@@ -121,7 +121,7 @@
   }
 
   .ticked {
-    background-color: black;
+    background-color: #1d1d1d;
   }
 
   @media only screen and (min-width: 768px) {

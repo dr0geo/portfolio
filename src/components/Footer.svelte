@@ -41,7 +41,7 @@
     </div>
     <div class="item">
       <img src="/images/logo/github.png" alt="" loading="lazy" />
-      <p><a href="https://github.com/dr0geo" target="_blank" rel="noreferrer">@dr0geo</a><br />Dig a little here... &#x1F609</p>
+      <p>@<a href="https://github.com/dr0geo" target="_blank" rel="noreferrer">dr0geo</a><br />Dig a little here... &#x1F609</p>
     </div>
   </div>
 </footer>
@@ -71,7 +71,7 @@
     color: white;
     display: grid;
     grid-template-columns: 1fr;
-    margin: auto;
+    margin: 30px auto 0 auto;
     width: 90%;
   }
 

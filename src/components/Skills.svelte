@@ -45,11 +45,11 @@
       </figure>
       <figure>
         <img
-          src="/images/logo/typescript.png"
-          alt="TypeScript"
+          src="/images/logo/svelte.png"
+          alt="Svelte"
           loading="lazy"
         />
-        <figcaption>TypeScript</figcaption>
+        <figcaption>Svelte</figcaption>
       </figure>
       <figure>
         <img src="/images/logo/linux.png" alt="Linux" loading="lazy" />
