@@ -2,9 +2,9 @@
 
   import { fly } from 'svelte/transition';
   import Inview from 'svelte-inview';
-  let ref;
+  import { selected } from '../../stores';
 
-  export let selected;
+  let ref;
 
 </script>
 
@@ -12,7 +12,7 @@
   wrapper={ref}
   rootMargin="0px"
   threshold=0.7
-  on:enter={() => selected = 1}>
+  on:enter={() => $selected = 1}>
 
 <div id="home" class="container" bind:this={ref}>
   <div class="title">

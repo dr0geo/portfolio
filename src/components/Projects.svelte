@@ -1,10 +1,9 @@
 <script>
   import Inview from 'svelte-inview';
+  import { selected } from '../stores';
   import { projects } from '../data.js';
 
   let ref;
-
-  export let selected;
 
 </script>
 
@@ -12,7 +11,7 @@
   wrapper={ref}
   rootMargin="0px"
   threshold=0.7
-  on:enter={() => selected = 4}>
+  on:enter={() => $selected = 4}>
 
 <section id="projects" bind:this={ref}>
   <h3>my<br /><em>PROJECTS</em></h3>
