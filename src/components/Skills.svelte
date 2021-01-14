@@ -7,9 +7,14 @@
 
 <Inview
   wrapper={ref}
-  rootMargin="0px"
-  threshold="0.8"
-  on:enter={() => ($selected = 3)}
+  threshold={0.5}
+  on:leave={({ detail }) => {
+    if (detail.scrollDirection.vertical === 'up') {
+      $selected = 4;
+    } else {
+      $selected = 2;
+    }
+  }}
 >
   <section id="skills" bind:this={ref}>
     <h3>my<br /><em>SKILLS</em></h3>

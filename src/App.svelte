@@ -7,7 +7,8 @@
   import Details from './components/Introduction/Details.svelte';
   import Skills from './components/Skills.svelte';
 	import Projects from './components/Projects.svelte';
-	import Reviews from './components/Reviews.svelte';
+  import Reviews from './components/Reviews.svelte';
+  import Footer from './components/Footer.svelte';
 </script>
 
 <header in:fade={{ duration: 600 }}>
@@ -19,5 +20,6 @@
   <Details />
   <Skills />
 	<Projects />
-	<Reviews />
+  <Reviews />
 </main>
+<Footer />

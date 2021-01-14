@@ -21,7 +21,7 @@ body {
   font-family: 'Poppins', 'Tahoma', sans-serif;
 }
 
-section {
+section, footer {
   padding: 40px 20px;
 }
 
@@ -55,7 +55,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  section {
+  section, footer {
     padding: 40px 5%;
   }
 
@@ -65,7 +65,7 @@ p {
 }
 
 @media only screen and (min-width: 1280px) {
-  section {
+  section, footer {
     scroll-margin-top: 67px;
   }
 

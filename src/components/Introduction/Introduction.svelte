@@ -7,9 +7,7 @@
 
 <Inview
   wrapper={ref}
-  rootMargin="0px"
-  threshold="0.8"
-  on:enter={() => ($selected = 2)}
+  threshold={0.5}
 >
   <section id="about" bind:this={ref}>
     <div class="picture">

@@ -1,12 +1,25 @@
 <script>
   import Inview from 'svelte-inview';
+  import { selected } from '../../stores';
+
   let ref;
 </script>
 
-<Inview let:inView wrapper={ref} rootMargin="-200px" unobserveOnEnter={true}>
-  <section>
+<Inview
+  wrapper={ref}
+  threshold={0.5}
+  on:leave={({ detail }) => {
+    if (detail.scrollDirection.vertical === 'up') {
+      $selected = 3;
+    } else {
+      return;
+    }
+  }}
+>
+  <section bind:this={ref}>
     <h3>come<br /><em>CLOSER</em></h3>
     <div id="container" class="container">
+      <Inview let:inView wrapper={ref} rootMargin="-200px" unobserveOnEnter={true}>
       <div class="card" bind:this={ref}>
         <img
           src="/images/logo/hercules.png"
@@ -68,9 +81,11 @@
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
+    </Inview>
     </div>
   </section>
 </Inview>
+
 
 <style>
   section {

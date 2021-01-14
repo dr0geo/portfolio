@@ -8,10 +8,19 @@
 
 <Inview
   wrapper={ref}
-  rootMargin="0px"
-  threshold="0.7"
-  on:enter={() => ($selected = 1)}
->
+  threshold={0.5}
+  on:leave={({ detail }) => {
+    if (detail.scrollDirection.vertical === 'up') {
+      $selected = 2;
+    } else {
+      return;
+    }
+  }}
+  on:enter={({ detail }) => {
+    if (detail.scrollDirection.vertical === 'down') {
+      $selected = 1;
+    }
+  }}>
   <div id="home" class="container" bind:this={ref}>
     <div class="title">
       <h1 in:fly={{ delay: 400, duration: 700, y: -300 }}>

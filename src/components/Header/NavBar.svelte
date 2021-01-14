@@ -5,22 +5,22 @@
 <nav>
   <ul>
     <li>
-      <a href="#home" class={$selected === 1 ? 'selected' : ''}>Home </a>
+      <a href="#home" class:selected={$selected === 1}>Home </a>
     </li>
     <li>
-      <a href="#about" class={$selected === 2 ? 'selected' : ''}>About me</a>
+      <a href="#about" class:selected={$selected === 2}>About me</a>
     </li>
     <li>
-      <a href="#skills" class={$selected === 3 ? 'selected' : ''}>Skills</a>
+      <a href="#skills" class:selected={$selected === 3}>Skills</a>
     </li>
     <li>
-      <a href="#projects" class={$selected === 4 ? 'selected' : ''}>Projects</a>
+      <a href="#projects" class:selected={$selected === 4}>Projects</a>
     </li>
     <li>
-      <a href="#reviews" class={$selected === 5 ? 'selected' : ''}>Reviews</a>
+      <a href="#reviews" class:selected={$selected === 5}>Reviews</a>
     </li>
     <li>
-      <a href="#Contact" class={$selected === 6 ? 'selected' : ''}>Contact</a>
+      <a href="#contact" class:selected={$selected === 6}>Contact</a>
     </li>
   </ul>
 </nav>
