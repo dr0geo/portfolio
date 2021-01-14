@@ -37,7 +37,7 @@
     </div>
     <div class="item">
       <img src="/images/logo/location.png" alt="" loading="lazy" />
-      <p>Based in <a href="https://www.google.fr/maps/place/Cork/@51.7178672,-10.146355,7.25z/data=!4m5!3m4!1s0x4844900891beb961:0xa00c7a99731c5d0!8m2!3d51.8985143!4d-8.4756035" target="_blank" rel="noreferrer">Cork</a>, Ireland<br />Ready to move anywhere! &#128526 &#x1F6EB</p>
+      <p>Based in <a href="https://www.google.fr/maps/place/Cork/@51.7178672,-10.146355,7.25z/data=!4m5!3m4!1s0x4844900891beb961:0xa00c7a99731c5d0!8m2!3d51.8985143!4d-8.4756035" target="_blank" rel="noreferrer">Cork</a> &#x2618<br />Ready to move anywhere! &#128526 &#x1F6EB</p>
     </div>
     <div class="item">
       <img src="/images/logo/github.png" alt="" loading="lazy" />
