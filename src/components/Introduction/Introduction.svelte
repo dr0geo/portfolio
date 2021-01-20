@@ -31,20 +31,10 @@
   <h3>who i am<br /><em>HELLO</em></h3>
   <div class="text">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
+      Welcome on my portfolio website! My name is <strong>Geoffroy</strong>, I come from <strong>France</strong>, and I am currently undergoing a professional retraining. Indeed, I served my country in the French Air Force where I was a pilot for more than 7 years. I have been flying the C-130H tactical transport aircraft on a variety of missions. However, I felt like I needed to bring some change into my professional and personal life. This is why I decided to leave the Air Force at the beginning of 2020, and I <strong>moved to Cork</strong>, Ireland where I got a position as a flight instructor.
     </p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
+      I knew that I wanted to change my working environment completely, but this allowed me to benefit from a smooth transition, the time for me to <strong>learn web development</strong>. Unfortunately, the covid-19 crisis had a big impact on the company where I was supposed to work, and my job was cancelled. This led me to learn web development on a <strong>full time basis</strong> so that I could land a job in that field, or at least some freelance work as soon as possible.
     </p>
   </div>
 </section>
@@ -133,13 +123,13 @@
 
     .black,
     .grey {
-      height: 450px;
-      width: 450px;
+      height: 400px;
+      width: 400px;
     }
 
     .grey {
       left: 40px;
-      top: -410px;
+      top: -360px;
     }
 
     p {
