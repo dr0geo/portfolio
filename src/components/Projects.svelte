@@ -33,7 +33,7 @@
           <div class="stack">
             {#each project.stack as tech}
               <img
-                src="images/logo/{tech.toLowerCase()}.png"
+                src="images/logo/{tech.toLowerCase()}.svg"
                 alt={tech}
                 loading="lazy"
                 title={tech}
@@ -96,13 +96,16 @@
 
   .stack {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 30px;
   }
 
   .stack > img {
     height: 50px;
-    margin: auto;
+  }
+
+  .stack > img + img {
+    margin-left: 50px;
   }
 
   @media only screen and (min-width: 1280px) {
