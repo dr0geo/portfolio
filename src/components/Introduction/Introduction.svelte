@@ -1,5 +1,6 @@
 <script>
   import Inview from 'svelte-inview';
+ 
   import { selected } from '../../stores';
 
   let ref;

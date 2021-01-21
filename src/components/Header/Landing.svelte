@@ -34,7 +34,7 @@
         hsla(0deg, 0%, 0%, 0.6),
         hsla(0deg, 0%, 0%, 0.6)
       ),
-      url('/images/background/test.jpg');
+      url('/images/background/title.webp');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +84,7 @@
     }
 
     .image {
-      background: url('/images/background/test.jpg');
+      background: url('/images/background/title.webp');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

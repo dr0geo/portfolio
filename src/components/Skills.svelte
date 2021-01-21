@@ -123,7 +123,7 @@
             in:draw={{ duration: 5000, delay: 500 }}
             d={svgPaths.linuxYellow}
             stroke="#efd304"
-            stroke-width="5px"
+            stroke-width="10px"
             stroke-linejoin="round"
           />
           {/if}
@@ -195,7 +195,7 @@
   }
 
   .js {
-    fill: #f0d91d;
+    fill: #f5da3d;
   }
 
   .react {

@@ -33,7 +33,7 @@
     </div>
     <div class="item">
       <img src="/images/logo/phone.png" alt="" loading="lazy" />
-      <p><a href="tel:+353896126560" title="Available on Signal & WhatsApp">+353.89.612.65.60</a></p>
+      <p><a href="tel:+353896126560" title="I'm available on Signal & WhatsApp">+353.89.612.65.60</a></p>
     </div>
     <div class="item">
       <img src="/images/logo/location.png" alt="" loading="lazy" />
