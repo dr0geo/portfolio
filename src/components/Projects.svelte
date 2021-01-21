@@ -147,15 +147,15 @@
     }
 
     .first {
-      animation-delay: 0.5s;
+      animation-delay: 0.3s;
     }
 
     .second {
-      animation-delay: 0.8s;
+      animation-delay: 0.6s;
     }
 
     .third {
-      animation-delay: 1.1s;
+      animation-delay: 0.9s;
     }
 
     @media (any-hover: hover) {
