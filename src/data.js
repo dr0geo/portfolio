@@ -9,7 +9,7 @@ export const projects = [
       'This is the website of a French crêperie located in Paris. The UI was built with Next and I used Firebase to manage a database with the different bookings and orders. I also used Firebase to create an admin profile which has the necessary authorization to deal with the customers bookings and orders. Combined with SendinBlue SMTP services, I was able to create confirmation e-mails for each booking or order made online.',
     shortTitle: 'Restaurant website',
     shortDescription: [
-      'UI: React + Next',
+      'UI: React + Next + Styled-Components',
       'Database & authentication: Firebase',
       'Confirmation e-mails: Nodemailer'
     ]

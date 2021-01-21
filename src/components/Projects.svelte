@@ -65,8 +65,8 @@
 <style>
   section {
     background: linear-gradient(
-        hsla(0deg, 0%, 100%, 0.7),
-        hsla(0deg, 0%, 100%, 0.7)
+        hsla(0deg, 0%, 100%, 0.95),
+        hsla(0deg, 0%, 100%, 0.95)
       ),
       url('/images/background/projects.webp');
     background-repeat: no-repeat;
