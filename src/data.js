@@ -6,7 +6,13 @@ export const projects = [
     url: 'https://creperie-augustine.com',
     stack: ['React', 'Next', 'Firebase'],
     description:
-      'This is the website of a French crêperie located in Paris. The UI was built with Next and I used Firebase to manage a database with the different bookings and orders. I also used Firebase to create an admin profile which has the necessary authorization to deal with the customers bookings and orders. Combined with SendinBlue SMTP services, I was able to create confirmation e-mails for each booking or order made online.'
+      'This is the website of a French crêperie located in Paris. The UI was built with Next and I used Firebase to manage a database with the different bookings and orders. I also used Firebase to create an admin profile which has the necessary authorization to deal with the customers bookings and orders. Combined with SendinBlue SMTP services, I was able to create confirmation e-mails for each booking or order made online.',
+    shortTitle: 'Restaurant website',
+    shortDescription: [
+      'UI: React + Next',
+      'Database & authentication: Firebase',
+      'Confirmation e-mails: Nodemailer'
+    ]
   },
   {
     id: 2,
@@ -15,7 +21,13 @@ export const projects = [
     url: 'https://peintepox.vercel.app',
     stack: ['React', 'Next'],
     description:
-      'Here is the website of a French company specialized in industrial sanding, chemical pickling and painting. I built it using React with Next, and it is fully static. Styling was made with Styled-Components to benefit from the power of CSS in JS!'
+      'Here is the website of a French company specialized in industrial sanding, chemical pickling and painting. I built it using React with Next, and it is fully static. Styling was made with Styled-Components to benefit from the power of CSS in JS!',
+    shortTitle: 'Industrial company website',
+    shortDescription: [
+      'React',
+      'Next',
+      'Styled-Components'
+    ]
   },
   {
     id: 3,
@@ -24,7 +36,11 @@ export const projects = [
     url: '#home',
     stack: ['Svelte'],
     description:
-      "I read so many excellent reviews about Svelte that I definitely wanted to learn it. I thought that a light portfolio would be the ideal project to get started with it, so I took the leap and here is how I built what you're reading at the moment!"
+      "I read so many excellent reviews about Svelte that I definitely wanted to learn it. I thought that a light portfolio would be the ideal project to get started with it, so I took the leap and here is how I built what you're reading at the moment!",
+    shortTitle: 'Portfolio',
+    shortDescription: [
+      'Fully built with Svelte!'
+    ]
   }
 ];
 

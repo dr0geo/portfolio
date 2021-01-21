@@ -21,13 +21,27 @@
     <h3>my<br /><em>PROJECTS</em></h3>
     <div class="container">
       {#each projects as project (project.id)}
-        <div class="card">
+        <Inview let:inView wrapper={ref} rootMargin="-300px" unobserveOnEnter={true}>
+
+        <div class="card" bind:this={ref} class:flyIn={inView} class:first={project.id === 1} class:second={project.id === 2} class:third={project.id === 3}>
+          <!-- Flipping when on desktop -->
           <a href={project.url} target="_blank" rel="noreferrer">
-            <img
-              src="/images/projects/{project.name.toLowerCase()}.png"
-              alt={project.title}
-              loading="lazy"
-            />
+            <div class="flip-container">
+              <div class="flip-inner">
+                <img
+                  class="front"
+                  src="/images/projects/{project.name.toLowerCase()}.png"
+                  alt={project.title}
+                  loading="lazy"
+                />
+                <ul class="back">
+                  <li><strong>{project.shortTitle}</strong></li>
+                  {#each project.shortDescription as item}
+                    <li>{item}</li>
+                  {/each}
+                </ul>
+              </div>
+            </div>
           </a>
           <h4>{project.title}</h4>
           <div class="stack">
@@ -40,8 +54,9 @@
               />
             {/each}
           </div>
-          <p>{project.description}</p>
+          <p class="mobile">{project.description}</p>
         </div>
+        </Inview>
       {/each}
     </div>
   </section>
@@ -70,7 +85,7 @@
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 30px auto;
     text-align: center;
   }
@@ -86,12 +101,16 @@
     display: block;
   }
 
-  .card > a > img {
+  .front {
     box-shadow: 0px 0px 5px 5px #c5c5c5;
     margin: auto;
     max-height: 210px;
     max-width: 350px;
     width: 90%;
+  }
+
+  .back {
+    display: none;
   }
 
   .stack {
@@ -109,17 +128,87 @@
   }
 
   @media only screen and (min-width: 1280px) {
-    .container {
-      justify-content: center;
+    @keyframes translateIn {
+      0% {
+        transform: translateY(100px);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
 
-    .card > a {
-      transition: transform 0.2s ease-in-out;
+    .card {
+      transform: translateY(100px);
+    }
+
+    /* Up transition when appearing in viewport */
+    .flyIn {
+      animation: translateIn 0.5s ease-in-out both;
+    }
+
+    .first {
+      animation-delay: 0.5s;
+    }
+
+    .second {
+      animation-delay: 0.8s;
+    }
+
+    .third {
+      animation-delay: 1.1s;
     }
 
     @media (any-hover: hover) {
-      .card > a:hover {
-        transform: scale(1.05);
+
+      /* Hide mobile description */
+      .mobile {
+        display: none;
+      }
+
+      /* Flip image when hovered */
+      .flip-container {
+        height: 210px;
+        margin: auto;
+        perspective: 1000px;
+        width: 350px;
+      }
+
+      .flip-inner {
+        height: 100%;
+        position: relative;
+        transition: transform 0.3s ease-in-out 0.1s;
+        transform-style: preserve-3d;
+        width: 100%;
+      }
+
+      .front {
+        backface-visibility: hidden;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+
+      .back {
+        background-color: hsla(0deg, 0%, 0%, 0.9);
+        backface-visibility: hidden;
+        color: lightgray;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-left: 10px;
+        position: absolute;
+        transform: rotateY(180deg);
+        width: 100%;
+      }
+
+      strong {
+        border-bottom: 1px solid lightgray;
+      }
+      
+      .flip-container:hover > .flip-inner {
+        transform: rotateY(180deg);
       }
     }
   }
