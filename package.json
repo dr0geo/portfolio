@@ -1,6 +1,13 @@
 {
-  "name": "svelte-app",
+  "name": "portfolio",
+  "description": "This is my personal portfolio.",
   "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dr0geo/portfolio.git"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
