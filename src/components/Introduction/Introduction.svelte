@@ -35,7 +35,7 @@
       Welcome on my portfolio website! My name is <strong>Geoffroy</strong>, I come from <strong>France</strong>, and I am currently undergoing a professional retraining. Indeed, I served my country in the French Air Force where I was a pilot for more than 7 years. I have been flying the C-130H tactical transport aircraft on a variety of missions. However, I felt like I needed to bring some change into my professional and personal life. This is why I decided to leave the Air Force at the beginning of 2020, and I <strong>moved to Cork</strong>, Ireland where I got a position as a flight instructor.
     </p>
     <p>
-      I knew that I wanted to change my working environment completely, but this allowed me to benefit from a smooth transition, the time for me to <strong>learn web development</strong>. Unfortunately, the covid-19 crisis had a big impact on the company where I was supposed to work, and my job was cancelled. This led me to learn web development on a <strong>full time basis</strong> so that I could land a job in that field, or at least some freelance work as soon as possible.
+      I knew that I wanted to change my working environment completely, but this allowed me to benefit from a smooth transition, the time for me to <strong>learn web development</strong>. Unfortunately, the covid-19 crisis had a big impact on the company where I was supposed to work, and my job was cancelled. This led me to learn web development on a <strong>full time basis</strong> so that I could start to work as a developer as soon as possible.
     </p>
   </div>
 </section>
