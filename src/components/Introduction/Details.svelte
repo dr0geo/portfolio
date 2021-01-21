@@ -32,7 +32,7 @@
         </div>
         <h4>2012 - 2020</h4>
         <p>
-          &#x1F6EB 2012 was my starting point in the French Air Force. I joined as a student pilot, and I got trained during 3 years before being qualified as a <strong>military transport pilot</strong>. I chose to fly the C-130H because of the great variety of missions it was capable of, and I stayed in my tactical squadron for 4 years. This currently is my major professional activity and it allowed me to gain <strong>rigor</strong>, a strong <strong>team spirit</strong>, high <strong>adaptability</strong> as well as a good capacity to <strong>solve problems</strong> under time constraints.
+          &#x1F6EB 2012 was my starting point in the French Air Force. I joined as a student pilot, and I qualified as a <strong>military transport pilot</strong>. I chose to fly the C-130H because of the great variety of missions it was capable of, and I stayed in my tactical squadron for 4 years. This currently is my major professional activity and it allowed me to gain <strong>rigor</strong>, a strong <strong>team spirit</strong>, high <strong>adaptability</strong> as well as a good capacity to <strong>solve problems</strong> under time constraints.
         </p>
       </div>
       <div class="card">
@@ -45,7 +45,7 @@
         <div class="circle" />
         <h4>2020</h4>
         <p>
-          I decided to leave the French Air Force in 2020, thinking about a professional retraining for a little while at this moment. Indeed, the missions I was involved in were great, but I felt the need to settle down to be able to start a family in a more suitable environment. This is why I took a <strong>flight instructor</strong> job in an Irish company based in Cork. As mentionned above, the covid-19 crisis impact cancelled my position there and I decided to <strong>learn web development</strong> on a <strong>full time</strong> basis. &#x1F6EC
+          I decided to leave the French Air Force in 2020, as I was thinking about a professional retraining for a little while at this moment. Indeed, the missions I was involved in were great, but I felt the need to settle down to be able to start a family in a more suitable environment.I took a <strong>flight instructor</strong> job in an Irish company based in Cork and started <strong>learning web development</strong> on a part time basis. As mentionned above, the covid-19 crisis speeded up my transition towards the following step. &#x1F6EC
         </p>
       </div>
       <div class="card">
@@ -60,7 +60,7 @@
         </div>
         <h4>2021 - Ready to move!</h4>
         <p>
-          After some months of <strong>intensive web development self-training</strong>, I was able to get my first job offer: I had to create an industrial painting and chemical pickling <strong>company website</strong> (see <a href="https://peintepox.vercel.app" target="_blank" rel="noreferrer" title="Peintepox website">here</a>). And right after this, I had the opportunity to build the website of a French restaurant (see <a href="https://creperie-augustine.com" target="_blank" rel="noreferrer" title="Crêperie Augustine website">here</a>), including <strong>online bookings</strong> and <strong>click & collect</strong> features. This allowed me to learn a lot more about the technologies I trained on during the past months. Now, I am <strong>looking for a job</strong> where I can use my developer skills!
+          After some months of <strong>intensive web development self-training</strong>, I was able to get my first job offer: I had to create an <a href="https://peintepox.vercel.app" target="_blank" rel="noreferrer" title="Peintepox website">industrial company website</a>. And right after this, I had the opportunity to build the website of a <a href="https://creperie-augustine.com" target="_blank" rel="noreferrer" title="Crêperie Augustine website">French restaurant</a>, including <strong>online bookings</strong> and <strong>click & collect</strong> features. This allowed me to learn a lot more about the technologies I trained on during the past months. Now, I am <strong>looking for a full-time job</strong> where I can use my developer skills! &#x1F60A
         </p>
       </div>
     </Inview>
