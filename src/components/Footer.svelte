@@ -29,19 +29,19 @@
   <div class="container">
     <div class="item">
       <img src="/images/logo/email.png" alt="" loading="lazy" />
-      <p><a href="mailto:contact@geoffroy-vie.dev">contact@geoffroy-vie.dev</a></p>
+      <p><a href="mailto:contact@geoffroy-vie.dev" title="Give me the details of your project!">contact@geoffroy-vie.dev</a></p>
     </div>
     <div class="item">
-      <img src="/images/logo/phone.png" alt="" loading="lazy" title="Signal / WhatsApp" />
-      <p><a href="tel:+353896126560">+353.89.612.65.60</a></p>
+      <img src="/images/logo/phone.png" alt="" loading="lazy" />
+      <p><a href="tel:+353896126560" title="Available on Signal & WhatsApp">+353.89.612.65.60</a></p>
     </div>
     <div class="item">
       <img src="/images/logo/location.png" alt="" loading="lazy" />
-      <p>Based in <a href="https://www.google.fr/maps/place/Cork/@51.7178672,-10.146355,7.25z/data=!4m5!3m4!1s0x4844900891beb961:0xa00c7a99731c5d0!8m2!3d51.8985143!4d-8.4756035" target="_blank" rel="noreferrer">Cork</a> &#x2618<br />Ready to move anywhere! &#128526 &#x1F6EB</p>
+      <p>Based in <a href="https://www.google.fr/maps/place/Cork/@51.7178672,-10.146355,7.25z/data=!4m5!3m4!1s0x4844900891beb961:0xa00c7a99731c5d0!8m2!3d51.8985143!4d-8.4756035" target="_blank" rel="noreferrer" title="Check location on Google Maps">Cork</a> &#x2618<br />Ready to move anywhere! &#128526 &#x1F6EB</p>
     </div>
     <div class="item">
       <img src="/images/logo/github.png" alt="" loading="lazy" />
-      <p>@<a href="https://github.com/dr0geo" target="_blank" rel="noreferrer">dr0geo</a><br />Dig a little here... &#x1F609</p>
+      <p>@<a href="https://github.com/dr0geo" target="_blank" rel="noreferrer" title="Check my GitHub profile!">dr0geo</a><br />Dig a little here... &#x1F609</p>
     </div>
   </div>
 </footer>
