@@ -8,6 +8,42 @@
           "value" : "public, max-age=31557600, immutable"
         }
       ]
+    },
+    {
+      "source": "/reset.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31557600, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/global.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/build/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
     }
   ]
 }
