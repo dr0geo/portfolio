@@ -48,7 +48,7 @@ export const reviews = [
   {
     id: 1,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      '"Working with Geoffroy was a real pleasure! He is very professional, careful about the client needs, and my website was up and running very quickly! I am now able to get my clients bookings and orders directly from my own website, which is exactly what I needed. I would definitely recommend working with him if you need the job to be done efficiently!"',
     name: 'Théophile',
     company: 'Crêperie Augustine',
     image: '/images/logo/augustine.png'
@@ -56,7 +56,7 @@ export const reviews = [
   {
     id: 2,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      '"As my company previous website was getting old and slow, I asked Geoffroy to create a new one from scratch. I wanted it to be fast and with a pleasant user interface so that my potential clients would not run away from the website anymore. The task was completed well before what I was expecting, and the result is exactly what I wanted! Brilliant work!"',
     name: 'Cyriaque',
     company: 'Peintepox',
     image: '/images/logo/peintepox.png'
