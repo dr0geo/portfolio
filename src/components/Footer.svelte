@@ -60,8 +60,8 @@
   h3 > em {
     background: linear-gradient(
       transparent 15%,
-      #ffcd3e 15%,
-      #ffcd3e 80%,
+      #0093d9 15%,
+      #0093d9 80%,
       transparent 80%
     );
     color:#1d1d1d;
