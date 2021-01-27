@@ -60,7 +60,7 @@
         </div>
         <h4>2021 - Ready to move!</h4>
         <p>
-          After some months of <strong>intensive web development self-training</strong>, I was able to get my first job offer: I had to create an <a href="https://peintepox.vercel.app" target="_blank" rel="noreferrer" title="Peintepox website">industrial company website</a>. And right after this, I had the opportunity to build the website of a <a href="https://creperie-augustine.com" target="_blank" rel="noreferrer" title="Crêperie Augustine website">French restaurant</a>, including <strong>online bookings</strong> and <strong>click & collect</strong> features. This allowed me to learn a lot more about the technologies I trained on during the past months. Now, I am <strong>looking for a full-time job</strong> where I can use my developer skills! &#x1F60A
+          After some months of <strong>intensive web development self-training</strong>, I was able to get my first job offer: I had to create an <a href="https://peintepox.vercel.app" target="_blank" rel="noreferrer" title="Peintepox website">industrial company website</a>. And right after this, I had the opportunity to build the website of a <a href="https://dev.creperie-augustine.com" target="_blank" rel="noreferrer" title="Crêperie Augustine website">French restaurant</a>, including <strong>online bookings</strong> and <strong>click & collect</strong> features. This allowed me to learn a lot more about the technologies I trained on during the past months. Now, I am <strong>looking for a full-time job</strong> where I can use my developer skills! &#x1F60A
         </p>
       </div>
     </Inview>
