@@ -18,7 +18,7 @@ export const projects = [
     id: 2,
     title: 'Peintepox website',
     name: 'Peintepox',
-    url: 'https://peintepox.vercel.app',
+    url: 'https://peintepox.com',
     stack: ['React', 'Next'],
     description:
       'Here is the website of a French company specialized in industrial sanding, chemical pickling and painting. I built it using React with Next, and it is fully static. Styling was made with Styled-Components to benefit from the power of CSS in JS!',
@@ -48,18 +48,22 @@ export const reviews = [
   {
     id: 1,
     description:
-      '"Working with Geoffroy was a real pleasure! He is very professional, careful about the client needs, and my website was up and running very quickly! I am now able to get my clients bookings and orders directly from my own website, which is exactly what I needed. I would definitely recommend working with him if you need the job to be done efficiently!"',
+      '"Working with Geoffroy was a real pleasure! He was very professional, careful about my needs, and my website was up and running very quickly! I am now able to get my clients bookings and orders directly from my own website, which is exactly what I needed. I would definitely recommend working with him if you need the job to be done efficiently!"',
     name: 'Théophile',
+    position: 'Restaurant director',
     company: 'Crêperie Augustine',
-    image: '/images/logo/augustine.png'
+    image: '/images/logo/augustine.png',
+    url: 'https://dev.creperie-augustine.com'
   },
   {
     id: 2,
     description:
-      '"As my company previous website was getting old and slow, I asked Geoffroy to create a new one from scratch. I wanted it to be fast and with a pleasant user interface so that my potential clients would not run away from the website anymore. The task was completed well before what I was expecting, and the result is exactly what I wanted! Brilliant work!"',
+      '"As our company previous website was getting old and slow, I asked Geoffroy to create a new one from scratch. I wanted it to be fast and with a pleasant user interface so that our potential clients would not run away from the website anymore. The task was completed well before what I was expecting, and the result is exactly what I wanted! Brilliant work!"',
     name: 'Cyriaque',
+    position: 'CEO',
     company: 'Peintepox',
-    image: '/images/logo/peintepox.png'
+    image: '/images/logo/peintepox.png',
+    url: 'https://peintepox.com'
   }
 ];
 

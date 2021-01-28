@@ -27,7 +27,7 @@
 <section id="about" bind:this={ref}>
   <div class="picture">
     <div class="black" />
-    <div class="grey" />
+    <img class="profile-pic" src="/images/geoffroy.webp" alt="" loading="lazy" />
   </div>
   <h3>who i am<br /><em>HELLO</em></h3>
   <div class="text">
@@ -46,34 +46,39 @@
     background-color: #f2f2f2;
     display: grid;
     gap: 3vw 7vw;
-    grid-template-columns: 25vw 1fr;
-    grid-template-rows: 25vw auto;
+    grid-template-columns: 40vw 1fr;
+    grid-template-rows: 35vw auto;
   }
 
   .picture {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 40%;
+    height: 35vw;
+    width: 100%;
   }
 
   .black {
     background-color: #1d1d1d;
-    height: 25vw;
-    width: 25vw;
+    height: 35vw;
+    max-height: 300px;
+    max-width: 300px;
+    width: 35vw;
   }
 
-  .grey {
-    background-color: grey;
-    height: 25vw;
-    left: 3vw;
+  .profile-pic {
+    box-shadow: 5px 5px 5px 0px gray;
+    height: 35vw;
+    left: 5vw;
+    max-height: 300px;
+    max-width: 300px;
     position: relative;
-    top: -22vw;
-    width: 25vw;
+    top: -30vw;
+    width: 35vw;
   }
 
   h3 {
     align-self: center;
-    font-size: 10vw;
+    font-size: 7vw;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
@@ -93,10 +98,28 @@
   }
 
   p {
-    margin: 20px auto;
+    margin: 30px auto;
   }
 
   @media only screen and (min-width: 768px) {
+    section {
+      grid-template-rows: 300px auto;
+    }
+    
+    .black {
+      background-color: #1d1d1d;
+      height: 300px;
+      width: 300px;
+    }
+
+    .profile-pic {
+      box-shadow: 5px 5px 5px 0px gray;
+      height: 300px;
+      left: 30px;
+      top: -270px;
+      width: 300px;
+    }
+
     h3 {
       font-size: 6vw;
     }
@@ -123,12 +146,14 @@
     }
 
     .black,
-    .grey {
+    .profile-pic {
       height: 400px;
+      max-height: 400px;
+      max-width: 400px;
       width: 400px;
     }
 
-    .grey {
+    .profile-pic {
       left: 40px;
       top: -360px;
     }
