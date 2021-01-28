@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://geoffroy-vie.dev/sitemap.xml
+Sitemap: https://geoffroy-vie.dev/sitemap.xml
