@@ -35,7 +35,7 @@
         />
         <figcaption>
           <h4>{reviewToDisplay.name}</h4>
-          <p><em>({reviewToDisplay.position})</em></p>
+          <p><em>{reviewToDisplay.position}</em></p>
           <p><a href={reviewToDisplay.url} target="_blank" rel="noreferrer">{reviewToDisplay.company}</a></p>
         </figcaption>
       </figure>
@@ -108,7 +108,7 @@
   }
 
   figcaption > p > em {
-    color: gray;
+    font-style: italic;
   }
 
   figcaption > p > a {
