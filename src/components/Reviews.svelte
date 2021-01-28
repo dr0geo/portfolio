@@ -1,6 +1,6 @@
 <script>
   import Inview from 'svelte-inview';
-  import { fade, scale } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
   import { selected } from '../stores';
   import { reviews } from '../data';
 
