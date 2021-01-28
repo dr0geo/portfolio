@@ -35,7 +35,8 @@
         />
         <figcaption>
           <h4>{reviewToDisplay.name}</h4>
-          <p>{reviewToDisplay.company}</p>
+          <p><em>({reviewToDisplay.position})</em></p>
+          <p><a href={reviewToDisplay.url} target="_blank" rel="noreferrer">{reviewToDisplay.company}</a></p>
         </figcaption>
       </figure>
       <p class="description" in:fade={{ delay: 300 }}>{reviewToDisplay.description}</p>
@@ -102,8 +103,20 @@
     text-align: center;
   }
 
+  figcaption > p:last-of-type {
+    margin-top: 10px;
+  }
+
+  figcaption > p > em {
+    color: gray;
+  }
+
+  figcaption > p > a {
+    border-bottom: 1px solid #1d1d1d;
+  }
+
   h4 {
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
   }
 
   .description {
