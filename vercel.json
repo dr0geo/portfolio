@@ -5,7 +5,7 @@
       "headers" : [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; font-src 'self'; img-src 'self'; script-src 'sha256-RFWPLDbv2BY+rCkDzsE+0fr8ylGr2R2faWMhq4lfEQc='; style-src 'self'"
+          "value": "default-src 'none'; font-src 'self'; img-src 'self'; script-src 'sha256-CA4107D7FBFFBD706A8403B96A849E31251CCC34725C1721F069E7B88140623C'; style-src 'self'"
         },
         {
           "key" : "X-Frame-Options",
